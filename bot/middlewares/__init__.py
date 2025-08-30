@@ -1,4 +1,4 @@
-from aiogram import Dispatcher
+from aiogram import Dispatcher, Bot
 
 from configs import ImportantID
 from .logging_mdw import LoggingMiddleware
@@ -8,21 +8,22 @@ from .subscription_mdw import SubscriptionMiddleware
 from .error_mdw import ErrorHandlingMiddleware
 from .time_mdw import TimingMiddleware
 
-__all__ = [
-    LoggingMiddleware,
-    SubscriptionMiddleware,
-    RateLimitMiddleware,
-    ErrorHandlingMiddleware,
-    TimingMiddleware,
-    MessageCounterMiddleware,
-]
+# Настройки экспорта
+__all__ = (
+    "LoggingMiddleware",
+    "SubscriptionMiddleware",
+    "RateLimitMiddleware",
+    "ErrorHandlingMiddleware",
+    "TimingMiddleware",
+    "MessageCounterMiddleware",
+    "setup_middlewares",)
 
 
-def setup_middlewares(dp: Dispatcher, bot, channel_ids: list[int | str] = None) -> None:
+def setup_middlewares(dp: Dispatcher, bot: Bot, channel_ids: list[int | str] = None) -> None:
     """
     Регистрирует все middleware в диспетчере.
     """
-    channel_ids = channel_ids or []
+    channel_ids: list = channel_ids or []
 
     # Middleware для ВСЕХ событий (update level)
     middlewares_updates: list = [
