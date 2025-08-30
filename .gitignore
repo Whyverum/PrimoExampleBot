@@ -1,0 +1,68 @@
+# .gitignore: Игнорируемые файлы для Python проектов
+# Подробнее: https://github.com/github/gitignore/blob/main/Python.gitignore
+
+### Python ###
+# Виртуальные окружения и настройки
+.venv
+.env
+env
+venv/
+env/
+env.bak/
+venv.bak/
+
+# Кэш интерпретатора
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Пакеты и сборки
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.eg
+*.egg
+*.eggs
+
+# Poetry
+poetry.lock
+.pypoetry/
+
+### Логи и БД ###
+*.log
+*.logs
+*.log.*
+*.logs.*
+log/
+logs/
+*.sqlite
+*.db
+
+### IDE ###
+.idea/
+.vscode/
+*.swp
+*.sublime-*
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Тестирование ###
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/

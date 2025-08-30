@@ -1,0 +1,59 @@
+# Russian translations for Bot Super Project.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the Bot Super Project
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bot Super Project 0.1\n"
+"Report-Msgid-Bugs-To: john@doe-email.com\n"
+"POT-Creation-Date: 2024-01-12 16:11+0500\n"
+"PO-Revision-Date: 2025-08-10 19:33+0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: bot/handlers/commands/lang.py:43
+msgid "Выберите язык:"
+msgstr ""
+
+#: bot/handlers/commands/lang.py:50
+#, python-brace-format
+msgid "Язык {lang} не поддерживается!"
+msgstr ""
+
+#: bot/handlers/commands/start.py:29
+msgid "Создать пост📔"
+msgstr ""
+
+#: bot/handlers/commands/start.py:30
+msgid "Посмотреть список📋"
+msgstr ""
+
+#: bot/handlers/commands/start.py:31
+msgid "Изменить язык🌐"
+msgstr ""
+
+#: bot/handlers/commands/start.py:35
+#, python-brace-format
+msgid ""
+"Добро пожаловать, <a href=\"{url}\">{name}</a>!\n"
+"\n"
+"Мое имя - <b>{bot_name}</b>! Я искусственный интеллект и сказитель ваших "
+"историй! \n"
+"Моя цель — помочь вам сориентироваться и сделать ваши истории куда "
+"интереснее! \n"
+"Надеюсь, я смогу вам помочь! Пожалуйста, выберите нужную функцию на "
+"клавиатуре!\n"
+"\n"
+"Интересный факт:\n"
+"<blockquote>{fact}</blockquote>\n"
+msgstr ""
+

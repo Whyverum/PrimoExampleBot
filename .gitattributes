@@ -1,0 +1,97 @@
+# =============================================================================
+# Git LFS: большие бинарные файлы, модели, архивы
+# =============================================================================
+*.7z      filter=lfs diff=lfs merge=lfs -text
+*.arrow   filter=lfs diff=lfs merge=lfs -text
+*.bin     filter=lfs diff=lfs merge=lfs -text
+*.bz2     filter=lfs diff=lfs merge=lfs -text
+*.ckpt    filter=lfs diff=lfs merge=lfs -text
+*.ftz     filter=lfs diff=lfs merge=lfs -text
+*.gz      filter=lfs diff=lfs merge=lfs -text
+*.h5      filter=lfs diff=lfs merge=lfs -text
+*.joblib  filter=lfs diff=lfs merge=lfs -text
+*.lfs.*   filter=lfs diff=lfs merge=lfs -text
+*.mlmodel filter=lfs diff=lfs merge=lfs -text
+*.model   filter=lfs diff=lfs merge=lfs -text
+*.msgpack filter=lfs diff=lfs merge=lfs -text
+*.npy     filter=lfs diff=lfs merge=lfs -text
+*.npz     filter=lfs diff=lfs merge=lfs -text
+*.onnx    filter=lfs diff=lfs merge=lfs -text
+*.ot      filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+*.pb      filter=lfs diff=lfs merge=lfs -text
+*.pickle  filter=lfs diff=lfs merge=lfs -text
+*.pkl     filter=lfs diff=lfs merge=lfs -text
+*.pt      filter=lfs diff=lfs merge=lfs -text
+*.pth     filter=lfs diff=lfs merge=lfs -text
+*.rar     filter=lfs diff=lfs merge=lfs -text
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+saved_model/**/* filter=lfs diff=lfs merge=lfs -text
+*.tar.*   filter=lfs diff=lfs merge=lfs -text
+*.tar     filter=lfs diff=lfs merge=lfs -text
+*.tflite  filter=lfs diff=lfs merge=lfs -text
+*.tgz     filter=lfs diff=lfs merge=lfs -text
+*.wasm    filter=lfs diff=lfs merge=lfs -text
+*.xz      filter=lfs diff=lfs merge=lfs -text
+*.zip     filter=lfs diff=lfs merge=lfs -text
+*.zst     filter=lfs diff=lfs merge=lfs -text
+*tfevents* filter=lfs diff=lfs merge=lfs -text
+
+# =============================================================================
+# Автоопределение текста, окончания строк
+# =============================================================================
+* text=auto eol=lf
+
+# =============================================================================
+# Текстовые файлы (Python, конфиги, документы)
+# =============================================================================
+*.py       text
+*.pyi      text
+*.ipynb    text
+*.html     text
+*.css      text
+*.js       text
+*.json     text
+*.md       text
+*.yml      text
+*.yaml     text
+*.xml      text
+*.txt      text
+*.cfg      text
+*.toml     text
+*.ini      text
+*.env      text
+
+# =============================================================================
+# Изображения
+# =============================================================================
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.bmp  binary
+*.webp binary
+*.ico  binary
+*.svg  text
+
+# =============================================================================
+# Шрифты
+# =============================================================================
+*.eot  binary
+*.ttf  binary
+*.woff binary
+*.woff2 binary
+*.otf  binary
+
+# =============================================================================
+# GitHub Linguist (указание языка для отображения)
+# =============================================================================
+*.py       linguist-language=Python
+*.ipynb   linguist-language=Jupyter Notebook
+*.html     linguist-language=HTML
+*.css      linguist-language=CSS
+*.js       linguist-language=JavaScript
+*.json     linguist-language=JSON
+*.md       linguist-language=Markdown
+*.yml      linguist-language=YAML
+*.yaml     linguist-language=YAML

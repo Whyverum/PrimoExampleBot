@@ -1,0 +1,35 @@
+# Исключить скрытые системные каталоги, но не всё подряд
+.git/
+.gitattributes
+.gitignore
+
+# Виртуальные окружения и Python-кэш
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE-файлы
+.idea/
+.vscode/
+
+# Тесты и документация
+tests/
+test/
+docs/
+examples/
+
+# Логи и артефакты сборки
+*.log
+*.logs
+*.log.*
+*.logs.*
+Logs/
+Log/
+dist/
+build/
+
+# Примеры и шаблоны
+.env
+env
