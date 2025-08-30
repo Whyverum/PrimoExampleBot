@@ -1,5 +1,4 @@
 from datetime import datetime
-from time import sleep
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
@@ -202,7 +201,7 @@ class BotInfo:
 
 
     @staticmethod
-    def start_info_out() -> str:
+    def start_info_out(out: bool = True) -> str:
         bot_time: str = f"Бот @{BotInfo.username} запущен в {datetime.now().strftime("%S:%M:%H %d-%m-%Y")}\n"
         bot_name: str = f"Основное имя: {BotInfo.first_name}\n"
         bot_postname: str = f" Доп. имя: {BotInfo.last_name}\n"
@@ -221,9 +220,9 @@ class BotInfo:
                         f"{bot_added_to_attachment_menu} {bot_supports_inline_queries} {bot_can_connect_to_business} "
                         f"{bot_has_main_web_app}")
 
-        # Печатаем все данные в консоль с задержкой в 1 секунду
-        sleep(1)
-        print(f"\033[34m{bot_all_info}\033[0m")
+        # Печатаем все данные в консоль
+        if out:
+            print(f"\033[34m{bot_all_info}\033[0m")
 
         # Записываем информацию в файл
         try:
@@ -257,4 +256,3 @@ class BotInfo:
             await cls.set_description(bots=bots)
             await cls.set_short_description(bots=bots)
             await cls.set_name(bots=bots)
-        cls.start_info_out()

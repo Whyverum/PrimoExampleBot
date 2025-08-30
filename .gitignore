@@ -66,3 +66,7 @@ htmlcov/
 .nox/
 .pytest_cache/
 .mypy_cache/
+test/
+tests/
+Test/
+Tests/

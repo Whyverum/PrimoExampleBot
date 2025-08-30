@@ -1,10 +1,8 @@
 from asyncio import run
 
-from bot import BotInfo, bot, dp, router
-from bot.core import server
-from bot.middlewares import setup_middlewares
-from database import db
 from configs import Webhook
+from database import db
+from bot import BotInfo, bot, dp, router, server, setup_middlewares
 from middleware.loggers import setup_logging, loggers
 
 
@@ -40,11 +38,13 @@ async def main() -> None:
 
         # Выбор режима работы: webhook или polling
         if Webhook.WEBHOOK:
-            loggers.info(f"Запуск бота @{BotInfo.username} в режиме вебхука...\n")
+            loggers.info(f"Запуск бота @{BotInfo.username} в режиме webhook...")
+            BotInfo.start_info_out()
             await server.serve()
 
         else:
-            loggers.info(f"Бот @{BotInfo.username} запущен в режиме polling...\n")
+            loggers.info(f"Бот @{BotInfo.username} запущен в режиме polling...")
+            BotInfo.start_info_out()
             await dp.start_polling(bot)
 
     except Exception as e:
